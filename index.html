@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bacon Beaver</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+        <!-- Logo -->
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">BACONBEAVER</a>
+        </div>
+
+        <!-- Menu items -->
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Bacon</a></li>
+                <li><a href="#">Eggs</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- "container-fluid" - use the entire width, "container" - fixed width -->
+<div class="container">
+    <h1>Learning Bootstrap</h1>
+
+    <h2>Outer container</h2>
+    <ul>
+        <li><code>"container fluid"</code> uses entire width</li>
+        <li><code>"container"</code> uses fixed width</li>
+    </ul>
+    <h2>Columns</h2>
+    <p>Columns always go inside <code>&#60;div class="row"&#62;</code></p>
+    <p>There are always 12 columns.</p>
+
+    <h3>Column classes:</h3>
+    <ul>
+        <li>xs - extra small (for phones)</li>
+        <li>sm - small (for tablets)</li>
+        <li>md - medium (for normal desktops and laptops)</li>
+        <li>lg - large  (for large desktops and TVs)</li>
+    </ul>
+
+    <h2>3 column layout</h2>
+    <div class="row">
+        <div class="col-md-4" style="background-color: #FF9999">Left</div>
+        <div class="col-md-4" style="background-color: #99CCFF">Middle</div>
+        <div class="col-md-4" style="background-color: #9999FF">Right</div>
+    </div>
+
+    <h1>Text styles</h1>
+
+    <h4>mark</h4>
+    <p>You can highlight text <mark>using the mark</mark> tags.</p>
+
+    <h4>blockquote</h4>
+    <blockquote>
+        <p>blocquote looks like this</p>
+        <footer>footer</footer>
+    </blockquote>
+
+    <h4>dl, dt, dd</h4>
+    <dl>
+        <dt>I'm a dt tag inside the dl</dt>
+            <dd>- I'm a dd tag</dd>
+            <dd>- I'm another dd</dd>
+        <dt>I'm the second dt inside the dl</dt>
+            <dd>- I'm dd</dd>
+    </dl>
+
+    <h4>code</h4>
+    <p>To show code, use the <code>print("code tag")</code>.</p>
+
+    <h4>pre</h4>
+    <p>For multi line code use the pre tags.</p>
+    <pre>
+for n in range(101):
+    if n % 4 == 0:
+        print(n)
+    </pre>
+
+    <h4>kbd</h4>
+    <p>This is supposed to be keyboard input <kbd>Ctrl+Alt+Del</kbd></p>
+
+    <h2>Color classes</h2>
+    <p class="text-muted">text-muted</p>
+    <p class="text-success">text-success</p>
+    <p class="text-danger">text-danger</p>
+    <p class="bg-success">bg-success</p>
+    <p class="bg-danger">bg-danger</p>
+
+    <h2>Tables</h2>
+
+    <h3>class table</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Label A</th>
+                <th>Label B</th>
+                <th>Label C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cell 1A</td>
+                <td>cell 1B</td>
+                <td>cell 1B</td>
+            </tr>
+            <tr>
+                <td>cell 2A</td>
+                <td>cell 2B</td>
+                <td>cell 2B</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>class table table-condensed</h3>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>Label A</th>
+                <th>Label B</th>
+                <th>Label C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cell 1A</td>
+                <td>cell 1B</td>
+                <td>cell 1B</td>
+            </tr>
+            <tr>
+                <td>cell 2A</td>
+                <td>cell 2B</td>
+                <td>cell 2B</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>class table table-striped</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Label A</th>
+                <th>Label B</th>
+                <th>Label C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cell 1A</td>
+                <td>cell 1B</td>
+                <td>cell 1B</td>
+            </tr>
+            <tr>
+                <td>cell 2A</td>
+                <td>cell 2B</td>
+                <td>cell 2B</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Responsive Images and Video</h2>
+
+    <h4>img-rounded and img-circle</h4>
+    <img src="images/lizard.jpg" class="img-rounded" width="250" height="250">
+    <img src="images/lizard.jpg" class="img-circle" width="250" height="250">
+
+    <h4>img-responsive</h4>
+    <img src="images/emu.jpg" class="img-responsive">
+
+    <h4>embed-responsive embed-responsive-16by9</h4>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/ClHu3XQBnGU"></iframe>
+    </div>
+
+</div>
+
+</body>
+</html>
